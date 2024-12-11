@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">RestarauntappJG3</string>
+    <string name="restaurant_name">Yates\' Place Restaurant</string>
+    <string name="hours">OUR HOURS: \n 11:00am - 9:00pm Tuesday-Sunday</string>
+    <string name="website_BTN">View Our Website</string>
+    <string name="email_ET_hint">email address</string>
+    <string name="mailing_list_BTN">Join Our Mailing List</string>
+    <string name="location">OUR LOCATION: \n 100 Kane St, Baltimore MD 21224</string>
+    <string name="view_food">View our food</string>
+    <string name="salad">salad</string>
+    <string name="pizza">pizza</string>
+    <string name="eml_msg_base">Greetings Yates Place! \n\n
+        I would like to join your mailing list with the following email address: "</string>
+    <string name="email_subj">Joining Mailing List</string>
+</resources>

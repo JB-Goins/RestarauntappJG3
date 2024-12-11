@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <!-- image from https://pixabay.com/photos/pizza-pizzeria-food-italian-5107039/ -->
+    <!--    <ImageView-->
+    <!--        android:id="@+id/img_pizza"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="200sp"-->
+    <!--        app:srcCompat="@drawable/pizza"-->
+    <!--        android:contentDescription="@string/pizza" />-->
+
+    <!--    <TextView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="@string/pizza"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:padding="20sp"-->
+    <!--        />-->
+
+    <!-- image from https://www.oetker.ca/ca-en/recipe/r/farmers-salad -->
+    <ImageView
+        android:id="@+id/img_salad"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:contentDescription="@string/salad"
+        app:srcCompat="@drawable/salad" />
+
+    <Button
+        android:id="@+id/salBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20sp"
+        android:text="@string/salad"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Base price: 9.95"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/qtyET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type quantity here"
+        android:inputType="number"
+
+        android:visibility="invisible" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:id="@+id/shrimpCB"
+        android:text="Shrimp 3.95"
+        android:visibility="invisible"
+        />
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:id="@+id/chickCB"
+        android:text="Chicken 4.00"
+        android:visibility="invisible"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/atoBTN"
+        android:text="Add To Order"
+        android:visibility="invisible"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="SubTotal:"
+            android:layout_marginRight="25sp"
+            />
+        <TextView
+            android:id="@+id/subTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="0.00" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+
+            android:text="Tax: 6%"
+            android:layout_marginRight="25sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textSize="25sp"
+            android:id="@+id/taxTV"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+
+            android:text="Total:"
+            android:layout_marginRight="25sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textSize="25sp"
+            android:id="@+id/totalTV"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
